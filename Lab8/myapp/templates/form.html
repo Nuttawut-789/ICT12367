@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Nuttawut Saigoon</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <form style="border: solid black 1px; padding: 2% 2% 1% 2%; border-radius: 10px;">
+            <div>
+                <h1>แบบฟอร์มบันทึกข้อมูลประชากร</h1>
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputName" class="form-label">ชื่อประชากร</label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="กรุณากรอกชื่อ-นามสกุล">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputAge" class="form-label">อายุ</label>
+                <input type="text" class="form-control" id="exampleInputAge"  placeholder="กรุณากรอกข้อมูลอายุเป็นตัวเลข">
+            </div>
+            <button type="submit" class="btn btn-success">ลงทะเบียน</button>
+            <button type="reset" class="btn btn-danger">ล้างข้อมูล</button>
+        </form>
+    </div>
+{% endblock %}
