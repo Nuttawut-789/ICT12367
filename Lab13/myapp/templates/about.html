@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Nuttawut Saigoon</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif; 
+            background-color: #f8f9fa;
+        }
+
+        .gallery-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ตกแต่งรูปภาพ */
+        .img-wrapper {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 24px;
+        }
+
+        .img-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 250px; /* กำหนดความสูงให้เท่ากันทุกรูป */
+            object-fit: cover; /* ป้องกันภาพเบี้ยว */
+            display: block;
+        }
+
+        /* ส่วนท้าย (Footer) */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            font-size: 0.8rem;
+            margin-top: 50px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <section class="gallery-section container text-center">
+        <h2 class="section-title">ภาพกิจกรรม</h2>
+        <p class="section-subtitle">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Delectus, minus. Corporis odio sit aliquam ex beatae a eveniet! Pariatur, ducimus?"
+        </p>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600" alt="Activity 1">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600" alt="Activity 2">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600" alt="Activity 3">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=600" alt="Activity 4">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=600" alt="Activity 5">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600" alt="Activity 6">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600" alt="Activity 7">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600" alt="Activity 8">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600" alt="Activity 9">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
